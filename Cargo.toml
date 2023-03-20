@@ -1,0 +1,16 @@
+[package]
+name = "wdrdf2graph"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["cyanic-selkie <cyanic-selkie@protonmail.com>"]
+description = "A program for efficiently extracting the graph structure from a Wikidata truthy N-Triples dump."
+readme = "README.md"
+repository = "https://github.com/cyanic-selkie/wdrdf2graph"
+categories = ["command-line-utilities"]
+
+[dependencies]
+arrow2 = { version = "0.16.0", features = ["io_parquet", "io_parquet_zstd"] }
+clap = { version = "4.1.8", features = ["derive"] }
+linereader = "0.4.0"
+rust-htslib = "0.41.1"
